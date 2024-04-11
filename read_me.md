@@ -63,3 +63,32 @@ Shows the differences between different versions of files in the repository. It 
 ### otherwise (none of the above) print statement
 `else:
     print("This is not a correct rating, please use universal, pg, 12, 12a, 15, 18")`
+
+# Loops
+## What are loops?
+
+- Loops are programming constructs that allow you to repeat a block of code multiple times. They're handy when you need to perform the same operation over and over again.
+
+- There are two main types of loops: ***for loops*** and ***while loops***.
+
+### **For Loop:**
+A for loop is used when you know in advance how many times you want to repeat a block of code. It's often used when you need to iterate over a sequence of elements, like a list or array.
+
+### Example of a for loop in Python
+    for i in range(5): 
+    print("Iteration", i)
+This iterates the letter i (by default increments by 1) and then prints it before iterating again
+
+### **While Loop:** 
+A while loop is used when you want to repeat a block of code as long as a condition is true. It's useful when you don't know in advance how many times you need to loop, or when the number of iterations depends on some condition.
+
+### Example of a while loop in Python
+    num = 0
+    while num < 5:
+    print("Iteration", num)
+    num += 1
+- This code states that the variable `num` is equal to 0 and then states that as long as that varibale is below 5 then print the statement and what the value of the variable is. It then increments it by one. It keeps going until the statement is no longer true at which point it exits the loop
+
+- The key difference between for and while loops is that for loops are typically used when you know the number of iterations beforehand, while while loops are used when you're not sure how many times you need to repeat the code.
+
+ - You might choose a while loop over a for loop when you want to keep iterating until a specific condition is met, which might change during the execution of the loop.
