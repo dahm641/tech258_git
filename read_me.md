@@ -40,3 +40,26 @@ Shows the differences between different versions of files in the repository. It 
 
 ### What is `git ignore` and why should we use it?
  `.gitignore` is a file we create to specify which files and folders that Git should ignore. We do this to keep the repository clean and uncluttered and it allows us to use `git add .` which means add all he files to the commit so we dont have to enter them manually due to us having to ignore some files we dont want in our git repo (saves time). 
+
+# Film rating project
+
+### possible film ratings are "universal", "pg", "12", "12a", "15", "18"
+`film_rating = "12a"`
+### use an if statement to check for "universal" rating
+`if film_rating == "universal":
+    print("all age groups can watch this film")`
+### else check if film rating is "pg"
+`elif film_rating == "pg":
+    print("General viewing, but some scenes may be unsuitable for young children.")`
+### else check if film rating is "12" or "12a"
+`elif film_rating == "12" or "12a":
+    print("Films classified 12A and video works classified 12 contain material that is not generally suitable for children aged under 12. No one younger than 12 may see a 12A film in a cinema unless accompanied by an adult.")`
+### else check if film rating is "15"
+`elif film_rating == "15":
+    print("No one younger than 15 may see a 15 film in a cinema.")`
+### else check if film rating is "18"
+`elif film_rating == "18":
+    print("No one younger than 18 may see an 18 film in a cinema.")`
+### otherwise (none of the above) print statement
+`else:
+    print("This is not a correct rating, please use universal, pg, 12, 12a, 15, 18")`
