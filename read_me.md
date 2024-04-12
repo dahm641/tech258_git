@@ -119,27 +119,33 @@ By being mindful of these considerations, you can effectively use loops in your 
 
 
 # Distributed Version Control
-## Difference betwen centralised and distributed version control
-
+## Difference between centralised and distributed version control
+![img.png](img.png)
+centralised version control is where all commits and changes are made directly to one repository. Distributed version control is when there is a local 
+repository that can sync up to the remote repository before pushing changees. This allows for less errors when pushing cloud to repositories and also local commits so you can keep working.
 ### What is GitHub
+GitHub is a distributed version control system where users can push commits of their code to.
 ### GitHub Alternatives
-
+BitBucket
 ## How to link a local repository to a remote repository on GitHub
 ### ***Prerequisites***
 - Create a GitHub account
 - Download and install Git Bash
 - Have a directory on your local system where that you would like to set as your local repository 
+- Have a repository on GitHub
+
+![create_new_repo_gh.png](..%2Fscreen_shots%2Fcreate_new_repo_gh.png)
 
 1. Once you have the above we first want to use the Git Bash CLI to navigate to your folder.
 we can do this by using the `cd` command.
 2. Then initialise Git by using the `git init` function
 
-picture 
+ ![cd+git_init.png](..%2Fscreen_shots%2Fcd%2Bgit_init.png)
 
 3. After that, we want to use `git status` to see all the items want to add to our commit. If there is any we want to ignore we create 
 a file called `.gitignore` and we can create this by using `nano .gitignore` and we can add files by typing them here and for directories adding a forward slash before them
 
-picture
+![nano gitignore.png](..%2Fscreen_shots%2Fnano%20gitignore.png)
 
 4. we now must connect our local repo and our remote repo (GitHub) we can do this by using these commands replacing the text in speech marks with your personal GitHub credentials
 ```
@@ -152,4 +158,6 @@ git branch -M your_branch_here
 and finally we can use `git commit -m "some note about the commit"` to commit the code.
 6. After this we can push it to the repo we linked earlier using `git push -u origin main` to push it to the remote repo (GitHub) we can chose the branch where it says origin. In this example
 we have used the main branch.
+
+![whole_process.png](..%2Fscreen_shots%2Fwhole_process.png)
 
