@@ -72,7 +72,7 @@ python if film_rating == "universal":
 - There are two main types of loops: ***for loops*** and ***while loops***.
 
 ### **For Loop:**
-A for loop is used when you know in advance how many times you want to repeat a block of code. It's often used when you need to iterate over a sequence of elements, like a list or array.
+A for loop is used when you know in advance hgit commit -m ow many times you want to repeat a block of code. It's often used when you need to iterate over a sequence of elements, like a list or array.
 
 ### Example of a for loop in Python
 ```python    
@@ -116,4 +116,40 @@ num += 1
 - ***Keep it Simple***: Write loops that are easy to understand and maintain. Avoid overly complex loop conditions or nesting multiple loops if possible. Clear, readable code is easier to debug and modify.
 
 By being mindful of these considerations, you can effectively use loops in your code while minimizing potential risks and following best practices.
+
+
+# Distributed Version Control
+## Difference betwen centralised and distributed version control
+
+### What is GitHub
+### GitHub Alternatives
+
+## How to link a local repository to a remote repository on GitHub
+### ***Prerequisites***
+- Create a GitHub account
+- Download and install Git Bash
+- Have a directory on your local system where that you would like to set as your local repository 
+
+1. Once you have the above we first want to use the Git Bash CLI to navigate to your folder.
+we can do this by using the `cd` command.
+2. Then initialise Git by using the `git init` function
+
+picture 
+
+3. After that, we want to use `git status` to see all the items want to add to our commit. If there is any we want to ignore we create 
+a file called `.gitignore` and we can create this by using `nano .gitignore` and we can add files by typing them here and for directories adding a forward slash before them
+
+picture
+
+4. we now must connect our local repo and our remote repo (GitHub) we can do this by using these commands replacing the text in speech marks with your personal GitHub credentials
+```
+git config --global user.email "youremail@yourdomain.com"
+git config --global user.name "Your Username"
+git remote add origin your_repo_url_here~
+git branch -M your_branch_here
+```
+5. Once this has been established we can use `git status` to see what we want to add to the commit then use `git add` to stage whatever we want to commit (can use `git add .` to include all).
+and finally we can use `git commit -m "some note about the commit"` to commit the code.
+6. After this we can push it to the repo we linked earlier using `git push -u origin main` to push it to the remote repo (GitHub) we can chose the branch where it says origin. In this example
+we have used the main branch.
 
