@@ -120,7 +120,9 @@ By being mindful of these considerations, you can effectively use loops in your 
 
 # Distributed Version Control
 ## Difference between centralised and distributed version control
-![img.png](img.png)
+
+![CVCvsDVC.png](screen_shots%2FCVCvsDVC.png)
+
 centralised version control is where all commits and changes are made directly to one repository. Distributed version control is when there is a local 
 repository that can sync up to the remote repository before pushing changees. This allows for less errors when pushing cloud to repositories and also local commits so you can keep working.
 ### What is GitHub
