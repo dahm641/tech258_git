@@ -55,7 +55,7 @@ You should end up with this: <br><br>
 We can do this using the cd command from earlier. I will show you mine.
 
     ![img_2.png](img_2.png) <br><br>
-6. .Once in your folder we then need to use the ssh key we made earlier. double check you havent got any commits that need to be synced using `git status` if you do then commit and push them. Once done then we need to make a reference to our private key in the ~/.ssh folder. We need to use the following:
+6. .Once in your folder we then need to use the ssh key we made earlier. Then we need to make a reference to our private key in the ~/.ssh folder. We need to use the following:
     ```
    eval `ssh-agent`
    ssh-add ~/.ssh/"your key name here"
